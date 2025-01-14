@@ -1,0 +1,30 @@
+<h1>Login</h1>
+<% let userfound = false;
+ if(!user_name){
+     user_data.forEach((item) => { 
+        userfound = true;
+        %>
+        <ul>
+        <li><%= item.name %></li>
+        <li><%= item.age %></li>
+    </ul>
+    <% }); 
+}else{  
+user_data.forEach((item)=>{
+    if(user_name == item.name && item.age >= 18){
+        userfound = true;
+        %>
+        <p>You are logged in as <%= item.name %></p>
+        <p>Age: <%= item.age %></p>
+   <% } else if(user_name == item.name && item.age < 18){ 
+    userfound = true; %>
+    <p>You are not allowed to login.</p>
+  <% }
+}); }
+if (!userfound) { %>
+    <p>Incorrect username. Create an account to login.</p>
+<% } %>
+
+
+
+
