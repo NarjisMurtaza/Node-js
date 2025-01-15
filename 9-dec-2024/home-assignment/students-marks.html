@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grades</title>
+</head>
+<body>
+    <h1>Student Grades</h1>
+    <div id="output"></div>
+    </body>
+    </html>
+<script>
+const student1 = {
+    firstName: "Ali",
+    marks: 50
+    }
+    const student2 = {
+    firstName: "Ahmed",
+    marks: 70
+    }
+    const student3 = {
+    firstName: "Abbas",
+    marks: 90
+    }
+    function assign_grade(std){
+    if (std.marks <= 50)
+    {std.grade = "B"}
+    else{std.grade = "A"}
+    }
+    assign_grade(student1);
+    assign_grade(student2);
+    assign_grade(student3);
+console.log(student1, student2, student3)
+const student_data = document.getElementById("output");
+student_data.innerHTML = `
+            <div>
+                <p><strong>Name:</strong> ${student1.firstName}, <strong>Marks:</strong> ${student1.marks}, <strong>Grade:</strong> ${student1.grade}</p>
+                <p><strong>Name:</strong> ${student2.firstName}, <strong>Marks:</strong> ${student2.marks}, <strong>Grade:</strong> ${student2.grade}</p>
+                <p><strong>Name:</strong> ${student3.firstName}, <strong>Marks:</strong> ${student3.marks}, <strong>Grade:</strong> ${student3.grade}</p>
+            </div>
+        `;
+</script>
