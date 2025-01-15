@@ -1,0 +1,16 @@
+<script>
+let day = "saturday";
+day = day.toUpperCase();
+// console.log(day);
+const weekdays = ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY"];
+const weekends = ["SATURDAY", "SUNDAY"];
+if (weekdays.includes(day) ){
+    console.log(true);
+}
+else if(weekends.includes(day)){
+    console.log(false);
+}
+else{
+    console.log("Please enter a valid value");
+}
+</script>
