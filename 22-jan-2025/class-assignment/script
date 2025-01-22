@@ -1,0 +1,6 @@
+const parent = {
+    nm: "sara",
+    age: 30,
+    desc: function(){ return "her name is" + this.nm}
+}
+console.log(desc.parent());
