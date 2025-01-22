@@ -1,0 +1,109 @@
+{
+    "user": {
+      "id": 101,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "profile": {
+        "age": 29,
+        "gender": "Male",
+        "location": "New York, USA",
+        "preferences": {
+          "language": "English",
+          "currency": "USD",
+          "theme": "dark"
+        }
+      },
+      "contacts": [
+        {
+          "name": "Jane Smith",
+          "relationship": "Friend",
+          "email": "jane.smith@example.com",
+          "phone": "+1234567890"
+        },
+        {
+          "name": "Tom Hanks",
+          "relationship": "Colleague",
+          "email": "tom.hanks@work.com",
+          "phone": "+0987654321"
+        }
+      ],
+      "orders": [
+        {
+          "order_id": "A12345",
+          "date": "2024-11-15",
+          "status": "Shipped",
+          "items": [
+            {
+              "product_id": "P9876",
+              "name": "Wireless Mouse",
+              "quantity": 2,
+              "price": 25.99
+            },
+            {
+              "product_id": "P5432",
+              "name": "Laptop Stand",
+              "quantity": 1,
+              "price": 39.99
+            }
+          ],
+          "total_amount": 91.97
+        },
+        {
+          "order_id": "B67890",
+          "date": "2024-11-20",
+          "status": "Delivered",
+          "items": [
+            {
+              "product_id": "P1122",
+              "name": "Bluetooth Speaker",
+              "quantity": 1,
+              "price": 59.99
+            }
+          ],
+          "total_amount": 59.99
+        }
+      ]
+    },
+    "company": {
+      "id": 202,
+      "name": "Tech Innovators Inc.",
+      "industry": "Technology",
+      "employees": [
+        {
+          "employee_id": 301,
+          "name": "Alice Johnson",
+          "role": "Software Engineer",
+          "salary": 85000,
+          "hire_date": "2022-01-15"
+        },
+        {
+          "employee_id": 302,
+          "name": "Bob Williams",
+          "role": "Product Manager",
+          "salary": 95000,
+          "hire_date": "2021-05-10"
+        }
+      ],
+      "departments": [
+        {
+          "dept_id": 401,
+          "name": "Engineering",
+          "manager": "Alice Johnson"
+        },
+        {
+          "dept_id": 402,
+          "name": "Product",
+          "manager": "Bob Williams"
+        }
+      ]
+    },
+    "settings": {
+      "notifications": {
+        "email": true,
+        "sms": false
+      },
+      "theme": "light",
+      "language": "en-US"
+    }
+  }
+  
